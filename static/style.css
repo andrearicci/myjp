@@ -2,16 +2,17 @@ html {
   font-size: 16px;
   background-color: #BAD9B5;
   padding: 0 5%;
-  
-  background-image: url("back.webp"); /* The image used */  
+
+  background-image: url("back.webp");
+  /* The image used */
   background-size: cover;
   background-attachment: fixed;
   background-blend-mode: overlay;
-  
+
 }
 
 body {
-  font-family: 'Noto Sans JP', sans-serif;  
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 /*"eff7cf","bad9b5","aba361","732c2c","420c14"*/
@@ -45,12 +46,15 @@ body>header {
   background: #420C14;
   border-radius: 2rem 2rem 0 0;
 }
+
 article.blog-post {
   border-bottom: 3px solid #732C2C;
 }
+
 article.blog-post header {
   padding-bottom: 0rem;
 }
+
 header h1 {
   margin: 0;
   font-weight: bold;
@@ -185,7 +189,6 @@ dl {
 
 .sa {
   background-image: linear-gradient(to right, #80cbc4, #4CAF50);
-  background-color:
 }
 
 .bx {
@@ -247,8 +250,9 @@ article.rule {
   background-color: #fff;
   border-radius: 0.8rem;
 }
-article.rule + p {
-  font-style: italic; 
+
+article.rule+p {
+  font-style: italic;
   font-size: 0.8rem;
 }
 
@@ -279,7 +283,7 @@ ul.legenda {
 footer {
   margin-top: 1rem;
   background-color: #fff;
-  padding-bottom:1rem;
+  padding-bottom: 1rem;
   border-radius: 1.5rem;
 }
 
@@ -296,18 +300,29 @@ table.legenda {
 /* 
   RUBY https://www.useragentman.com/blog/2010/10/29/cross-browser-html5-ruby-annotations-using-css/ */
 
-  @media (min-width: 640px) {
+@media (max-width: 640px) {
+  html {
+    font-size: 24px;
+  }
+}
 
+@media (min-width: 640px) {
+  html {
+    font-size: 22px;
   }
-  
-  @media (min-width: 768px) {
-  
-  }
-  
-  @media (min-width: 1024px) {
-  
-  }
-  
-  @media (min-width: 1280px) {
-  
-  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 18px;
+  }}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 18px;
+  }}
