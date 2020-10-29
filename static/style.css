@@ -137,7 +137,8 @@ ruby {
   ruby-position: over;
   ruby-align: center;
 }
-
+rb {font-size:1rem;}
+rt {font-size:.9rem;}
 
 /*
   rtc {
@@ -191,16 +192,6 @@ dl {
   background-image: linear-gradient(to right, #80cbc4, #4CAF50);
 }
 
-.bx {
-  display: flex;
-  flex-flow: row;
-  width: auto;
-}
-
-
-.bx {
-  border: 3px solid black
-}
 
 dl {
   display: inline-flex;
@@ -212,9 +203,6 @@ dl {
 }
 
 
-.right {
-  float: right;
-}
 
 dt,
 dd,
@@ -235,7 +223,7 @@ dt {
 }
 
 dd {
-  font-size: smaller;
+  font-size: .8rem;
   font-style: italic;
   padding: 0 0.3rem 0.3rem 0.3rem;
 }
@@ -250,6 +238,7 @@ article.rule {
   background-color: #fff;
   border-radius: 0.8rem;
 }
+small {font-size:.8rem;}
 
 article.rule+p {
   font-style: italic;
@@ -314,10 +303,10 @@ table.legenda {
 
 @media (min-width: 768px) {
   html {
-    font-size: 18px;
+    font-size: 20px;
   }}
 
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   html {
     font-size: 18px;
   }}
