@@ -2,11 +2,12 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="../static/style.css">
 <title>spesso - raramente — jp_notes</title>
+
 <body>
   <header>
-    <h1>jp_notes</h1>
+    <h1><a href="../">note di giapponese</a></h1>
     <nav>
-<!--       <ul class="nav navbar-nav">
+      <!--       <ul class="nav navbar-nav">
         <li><a href="../">Welcome</a></li>
         
           <li><a href="../articles">Grammatica</a></li>
@@ -18,7 +19,7 @@
       </ul>
     </nav> -->
   </header>
-  <div class="page">
+  <main class="page">
     
   
   <article class="blog-post">
@@ -37,42 +38,71 @@
             </h3>
       </hgroup>
     </header>
-  <form>
-  <fieldset>
-    <legend>spesso / raramente</legend>
-    よく
-    <dl>
-      <dt>
-        <label for="predicato">predicato (radice)</label>
-      </dt>
-      <dt>
-        <input type="text" name="predicato" placeholder="たべ">ます。
-      </dt>
-    </dl>
-    <em class="sidenote">spesso prende il predicato positivo</em>
+  <p><article class="rule">
+  <section>よく
+    <dl class="vrb">
+      <dt><ruby>
+          <rb>食</rb>
+          <rt>た</rt>
+        </ruby>べ</dt>
+      <dd>predicato (radice)</dd>
+    </dl> <strong>ます</strong>。
+  </section>
+  <aside><strong>spesso</strong> prende il predicato positivo</aside>
+</article>
+<small>spesso [mangio]</small></p>
+<p><article class="rule">
+  <section>あまり
+    <dl class="vrb">
+      <dt><ruby>
+          <rb>食</rb>
+          <rt>た</rt>
+        </ruby>べ</dt>
+      <dd>predicato (radice)</dd>
+    </dl> <strong class="alert">ません</strong>。
+  </section>
+  <aside><strong>raramente</strong> prende il predicato positivo</aside>
+</article>
+<small>raramente [mangio]</small></p>
 
-   <br />
-      あまり
-
-    <dl>
-      <dt>
-        <label for="predicato2">predicato (radice)</label>
-      </dt>
-      <dt>
-        <input type="text" name="predicato2" placeholder="たべ">ません。
-      </dt>
-    </dl>
-    <em class="sidenote">raramente prende il predicato negativo</em>
-
-  </fieldset>
-
-</form>
 </article>
 
 
-  </div>
+  </main>
   <footer>
-    <strong>(…)</strong> sottinteso &mdash; <strong>[…]</strong> testo d'esempio
+    <table class="legenda">
+      <caption>Legenda</caption>
+      <tbody>
+        <tr>
+          <td colspan="2" class="adj"><strong>A</strong> aggettivo</td>
+          <td colspan="2" class="vrb"><strong>V</strong> verbo</td>
+          <td rowspan="2" class="noun"><strong>S</strong> sostantivo</td>
+          <td rowspan="2" class="adv"><strong>AV</strong> avverbio</td>
+          <td rowspan="2" class="not">N/A</td>
+          <td><strong>(…)</strong> sottinteso</td>
+        </tr>
+        <tr>
+          <td class="adj_i"><strong>イ / i</strong></td>
+          <td class="adj_na"><strong>ナ / na</strong></td>
+          <td class="v1"><strong>V1</strong></td>
+          <td class="v2"><strong>V2</strong></td>
+          <td><strong>[…]</strong> testo d'esempio</td>
+        </tr>
+      </tbody>
+    </table>
+    <!--     <ul class="legenda">
+      <li class="adj"><strong>A</strong> aggettivo</li>
+      <li class="adj_i"><strong>イ</strong> aggettivo i</li>
+      <li class="adj_na"><strong>ナ</strong> aggettivo na</li>
+      <li class="noun"><strong>S</strong> sostantivo</li>
+      <li class="v1"><strong>V1</strong> v. gruppo 1</li>
+      <li class="v2"><strong>V2</strong> v. gruppo 2</li>
+      <li class="adv"><strong>AV</strong> avverbio</li>
+      </ul> 
+    <ul class="legenda">
+      <li><strong>(…)</strong> sottinteso</li>
+      <li><strong>[…]</strong> testo d'esempio</li>
+    </ul>-->
     <!-- &copy; Copyright 2020 by andrea. -->
   </footer>
 </body>

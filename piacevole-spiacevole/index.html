@@ -2,11 +2,12 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="../static/style.css">
 <title>piacevole - spiacevole — jp_notes</title>
+
 <body>
   <header>
-    <h1>jp_notes</h1>
+    <h1><a href="../">note di giapponese</a></h1>
     <nav>
-<!--       <ul class="nav navbar-nav">
+      <!--       <ul class="nav navbar-nav">
         <li><a href="../">Welcome</a></li>
         
           <li><a href="../articles">Grammatica</a></li>
@@ -18,7 +19,7 @@
       </ul>
     </nav> -->
   </header>
-  <div class="page">
+  <main class="page">
     
   
   <article class="blog-post">
@@ -37,58 +38,75 @@
             </h3>
       </hgroup>
     </header>
-  <form>
-  <fieldset>
-    <legend>della [frutta] (mi piace/non mi piace) la [banana]</legend>
+  <p><article class="rule">
+  <section><span class="adj_na">すきな</span>
     <dl>
+      <dt>くだもの</dt>
+      <dd>tema</dd>
+    </dl>
+    は
+    <dl>
+      <dt>バナナ</dt>
+      <dd>soggetto</dd>
+    </dl> です。
+  </section>
+  <aside>è piacevole</aside>
+</article>
+<small>circa la [frutta] mi piace la [banana]</small></p>
+<p><article class="rule">
+  <section><span class="adj_na">きらいな</span>
+    <dl>
+      <dt>くだもの</dt>
+      <dd>tema</dd>
+    </dl>
+    は
+    <dl>
+      <dt>バナナ</dt>
+      <dd>soggetto</dd>
+    </dl> です。。
+  </section>
+  <aside>è spiacevole</aside>
+</article>
+<small>circa la [frutta] non mi piace la [banana]</small></p>
 
-      <dt>
-        <label for="tema">tema</label>
-      </dt>
-      <dt>
-      <span>すきな</span>
-        <input type="text" name="tema" placeholder="くだもの">
-      </dt>
-    </dl>
-    <strong>は</strong>
-    <dl>
-      <dt>
-        <label for="soggetto">soggetto</label>
-      </dt>
-      <dt>
-        <input type="text" name="soggetto" placeholder="バナナ">です。
-      </dt>
-    </dl>
-    <em class="sidenote">[mangio] il [pesce] affermazione</em>
-
-    <dl>
-      <dt>
-        <label for="tema2">tema</label>
-      </dt>
-      <dt>
-      きらいな
-        <input type="text" name="tema2" placeholder="くだもの">
-      </dt>
-    </dl>
-    <strong>は</strong>
-    <dl>
-      <dt>
-        <label for="soggetto2">soggetto</label>
-      </dt>
-      <dt>
-        <input type="text" name="soggetto2" placeholder="バナナ">です。
-      </dt>
-    </dl>
-
-    <em class="sidenote">non [mangio] il [pesce] negazione</em>
-  </fieldset>
-</form>
 </article>
 
 
-  </div>
+  </main>
   <footer>
-    <strong>(…)</strong> sottinteso &mdash; <strong>[…]</strong> testo d'esempio
+    <table class="legenda">
+      <caption>Legenda</caption>
+      <tbody>
+        <tr>
+          <td colspan="2" class="adj"><strong>A</strong> aggettivo</td>
+          <td colspan="2" class="vrb"><strong>V</strong> verbo</td>
+          <td rowspan="2" class="noun"><strong>S</strong> sostantivo</td>
+          <td rowspan="2" class="adv"><strong>AV</strong> avverbio</td>
+          <td rowspan="2" class="not">N/A</td>
+          <td><strong>(…)</strong> sottinteso</td>
+        </tr>
+        <tr>
+          <td class="adj_i"><strong>イ / i</strong></td>
+          <td class="adj_na"><strong>ナ / na</strong></td>
+          <td class="v1"><strong>V1</strong></td>
+          <td class="v2"><strong>V2</strong></td>
+          <td><strong>[…]</strong> testo d'esempio</td>
+        </tr>
+      </tbody>
+    </table>
+    <!--     <ul class="legenda">
+      <li class="adj"><strong>A</strong> aggettivo</li>
+      <li class="adj_i"><strong>イ</strong> aggettivo i</li>
+      <li class="adj_na"><strong>ナ</strong> aggettivo na</li>
+      <li class="noun"><strong>S</strong> sostantivo</li>
+      <li class="v1"><strong>V1</strong> v. gruppo 1</li>
+      <li class="v2"><strong>V2</strong> v. gruppo 2</li>
+      <li class="adv"><strong>AV</strong> avverbio</li>
+      </ul> 
+    <ul class="legenda">
+      <li><strong>(…)</strong> sottinteso</li>
+      <li><strong>[…]</strong> testo d'esempio</li>
+    </ul>-->
     <!-- &copy; Copyright 2020 by andrea. -->
   </footer>
 </body>

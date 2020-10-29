@@ -1,83 +1,313 @@
-body {
-    font-family: 'Verdana', sans-serif;
-    margin: 50px 25px;
+html {
+  font-size: 16px;
+  background-color: #BAD9B5;
+  padding: 0 5%;
+  
+  background-image: url("back.webp"); /* The image used */  
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  
 }
 
+body {
+  font-family: 'Noto Sans JP', sans-serif;  
+}
+
+/*"eff7cf","bad9b5","aba361","732c2c","420c14"*/
 a {
-    color: #2a99b6;
+  color: #732C2C;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #33bbdf;
+  color: #ABA361;
 }
 
 label {
-    vertical-align: super;
-    font-size: .83em;
+  vertical-align: super;
+  font-size: .83em;
 }
 
 header,
 footer,
-div.page {
-    width: 760px;
-    margin: 0 auto;
-    background: #daeef3;
-    padding: 20px 30px;
+main.page {
+  width: 0.8 vw;
+  min-width: 0.5 vw;
+  margin: 0 auto;
+  padding: 1rem;
+  background: #EFF7CF;
+  border-radius: 0 0 2rem 2rem;
 }
 
+body>header {
+  color: #ABA361;
+  background: #420C14;
+  border-radius: 2rem 2rem 0 0;
+}
+article.blog-post {
+  border-bottom: 3px solid #732C2C;
+}
+article.blog-post header {
+  padding-bottom: 0rem;
+}
 header h1 {
-    color: #169bbd;
-    margin: 0;
-    font-weight: normal;
-    font-size: 42px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+header h1 a {
+  color: #ABA361;
 }
 
 header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 header nav ul li {
-    display: inline;
-    margin: 0 8px 0 0;
-    padding: 0;
+  display: inline;
+  margin: 0 8px 0 0;
+  padding: 0;
 }
 
 div.page {
-    background: #f1fbfe;
+  background: #f1fbfe;
+}
+
+hr {
+  border: none;
+  border-top: 5px dotted #ABA361;
 }
 
 .alert {
-    color: #e90e0e
+  color: #e90e0e
+}
+
+.highlight {
+  color: #008000;
 }
 
 .sidenote {
-    position: relative;
-    float: inline-end;
-    bottom: 0;
+  position: relative;
+  float: inline-end;
+  bottom: 0;
 }
 
 form dl {
-    display: inline-block;
-    vertical-align: sub;
+  display: inline-block;
+  vertical-align: sub;
 }
 
-fieldset dl, fieldset dt, fieldset p {margin: 0; padding: 0}
+fieldset dl,
+fieldset dt,
+fieldset p {
+  margin: 0;
+  padding: 0
+}
 
 .blog-post header {
-    width: auto;
+  width: auto;
 }
 
 .blog-post header h2,
 .blog-post header h3 {
-    display: inline-block;
-    margin: 0;
-    padding: 0
+  display: inline-block;
+  margin: 0;
+  padding: 0
 }
 
 .blog-post header h3 {
-    float: right;
-    font-size: .8em;
-    font-weight: normal;
+  float: right;
+  font-size: .8em;
+  font-weight: normal;
 }
+
+/* ######################### my fresh new content ########################*/
+
+
+
+ruby {
+  ruby-position: over;
+  ruby-align: center;
+}
+
+
+/*
+  rtc {
+    ruby-position: under;
+    ruby-align: center;
+  } */
+
+dl {
+  background-color: #ddd;
+  padding: .2em;
+  border-radius: 0.8rem;
+}
+
+.adj {
+  background-color: #4CAF50
+}
+
+.adj_na {
+  background-color: #CDDC39;
+}
+
+.adj_i {
+  background-color: #8BC34A;
+}
+
+.noun {
+  background-color: #80cbc4;
+}
+
+.vrb {
+  background-color: #FF5722;
+}
+
+.v1 {
+  background-color: #FF9800;
+}
+
+.v2 {
+  background-color: #FFC107;
+}
+
+.adv {
+  background-color: #92a4ae;
+}
+
+.not {
+  background-color: #ddd;
+}
+
+.sa {
+  background-image: linear-gradient(to right, #80cbc4, #4CAF50);
+  background-color:
+}
+
+.bx {
+  display: flex;
+  flex-flow: row;
+  width: auto;
+}
+
+
+.bx {
+  border: 3px solid black
+}
+
+dl {
+  display: inline-flex;
+  flex-direction: column;
+  flex-flow: column;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+
+.right {
+  float: right;
+}
+
+dt,
+dd,
+dl span {
+  width: auto;
+  flex-basis: 20%;
+  margin: 0;
+  padding: 0;
+}
+
+dt {
+  background-color: #fff;
+  padding: 0.2rem;
+  border-radius: 0.8rem;
+  margin: 0.2rem;
+
+  text-align: center;
+}
+
+dd {
+  font-size: smaller;
+  font-style: italic;
+  padding: 0 0.3rem 0.3rem 0.3rem;
+}
+
+article.rule {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0;
+  padding: 0.5em 1em;
+  background-color: #fff;
+  border-radius: 0.8rem;
+}
+article.rule + p {
+  font-style: italic; 
+  font-size: 0.8rem;
+}
+
+section {
+  display: inline;
+  /* background-color:lime */
+}
+
+aside {
+  display: inline;
+  /* background-color: rgba(255, 160, 97, 0.918) */
+  font-family: 'Noto Serif JP', serif;
+  font-style: italic;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+ul.legenda {
+  list-style: none
+}
+
+.legenda li {
+  display: inline-block;
+  font-size: smaller;
+  padding: 0.2rem 0.5rem;
+}
+
+footer {
+  margin-top: 1rem;
+  background-color: #fff;
+  padding-bottom:1rem;
+  border-radius: 1.5rem;
+}
+
+table.legenda {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.legenda td {
+  text-align: center;
+  width: calc(100%/6)
+}
+
+/* 
+  RUBY https://www.useragentman.com/blog/2010/10/29/cross-browser-html5-ruby-annotations-using-css/ */
+
+  @media (min-width: 640px) {
+
+  }
+  
+  @media (min-width: 768px) {
+  
+  }
+  
+  @media (min-width: 1024px) {
+  
+  }
+  
+  @media (min-width: 1280px) {
+  
+  }
