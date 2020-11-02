@@ -137,8 +137,14 @@ ruby {
   ruby-position: over;
   ruby-align: center;
 }
-rb {font-size:1rem;}
-rt {font-size:.9rem;}
+
+rb {
+  font-size: 1rem;
+}
+
+rt {
+  font-size: .9rem;
+}
 
 /*
   rtc {
@@ -192,6 +198,11 @@ dl {
   background-image: linear-gradient(to right, #80cbc4, #4CAF50);
 }
 
+.group {
+  display: inline;
+  padding: .5rem;
+  border: 3px dotted #000;
+}
 
 dl {
   display: inline-flex;
@@ -238,7 +249,10 @@ article.rule {
   background-color: #fff;
   border-radius: 0.8rem;
 }
-small {font-size:.8rem;}
+
+small {
+  font-size: .8rem;
+}
 
 article.rule+p {
   font-style: italic;
@@ -258,6 +272,134 @@ aside {
   font-size: smaller;
   font-weight: bold;
 }
+
+/********* TAVOLA DEI VERBI #inizio **********/
+table.verbi-G1 {
+  /*   border: none;
+  border-collapse: separate; 
+  width: 100%;*/
+  font-size: 2rem;
+  border-collapse: separate;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+     0px 10px 20px rgba(0,0,0,0.05),
+     0px 20px 20px rgba(0,0,0,0.05),
+     0px 30px 20px rgba(0,0,0,0.05);
+     padding:.5rem;
+}
+
+.verbi-G1 caption {
+  text-align: left;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+
+.verbi-G1 tbody tr {
+  margin: .2rem;
+  padding: .2rem;
+  opacity: .75;
+  transition: .25s ease-in-out;
+}
+
+.verbi-G1 tbody tr:hover,
+.verbi-G1.te tr {
+  opacity: 1;
+}
+
+tr.polite {
+  border: 8px solid #ff0000;
+}
+
+.verbi-G1 td {
+  padding: .2em;
+  border-radius: 1rem;
+  font-size: 2rem;
+}
+
+.verbi-G1 th {
+  color: #fff;
+  background-color: #000;
+  padding: .2em;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+
+.verbi-G1 th,
+.verbi-G1 td {
+  width: 4rem;
+  margin-bottom: 1rem;
+  border-spacing: 0.8rem;
+  text-align: center;
+}
+
+td.nota {
+  border: none;
+  font-size: 0.8rem;
+  word-wrap: wrap;
+  text-align: left;
+}
+
+/* https://colordesigner.io/gradient-generator  9 step*/
+tr.rainbow td:nth-child(2), td.te.g1a {
+  background-color: #5cbd54;
+}
+
+tr.rainbow td:nth-child(3) {
+  background-color: #7eba46;
+}
+
+tr.rainbow td:nth-child(4),  td.te.g1c {
+  background-color: #99b63d;
+}
+
+tr.rainbow td:nth-child(5) {
+  background-color: #b0b13a;
+}
+
+tr.rainbow td:nth-child(6),  td.te.g1d {
+  background-color: #c4ab3c;
+}
+
+tr.rainbow td:nth-child(7) {
+  background-color: #d6a644;
+}
+
+tr.rainbow td:nth-child(8),  td.te.g1e {
+  background-color: #e5a050;
+}
+
+tr.rainbow td:nth-child(9) {
+  background-color: #f19b5e;
+}
+
+tr.rainbow td:nth-child(10),  td.te.g1b {
+  background-color: #fa976e;
+}
+
+tr.rainbow td:nth-child(13) {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.verbi-G1 tr.rainbow:hover td:nth-child(13) {
+  background-color: #7cc3a1;
+  transition: .25s ease-in-out;
+}
+
+.te td {
+  background-color: transparent;
+  border: none;
+}
+
+td.te {
+  background-color: white;
+  border: none;
+}
+.lite {
+  font-size:.8rem;
+  color:#444;
+}
+/* TAVOLA DEI VERBI # fine */
 
 ul.legenda {
   list-style: none
@@ -304,14 +446,17 @@ table.legenda {
 @media (min-width: 768px) {
   html {
     font-size: 20px;
-  }}
+  }
+}
 
 @media (min-width: 1080px) {
   html {
     font-size: 18px;
-  }}
+  }
+}
 
 @media (min-width: 1280px) {
   html {
     font-size: 18px;
-  }}
+  }
+}
