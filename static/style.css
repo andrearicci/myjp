@@ -1,17 +1,30 @@
 html {
+  position: relative;
   font-size: 16px;
-  background-color: #BAD9B5;
   padding: 0 5%;
+  /* https://css-tricks.com/apply-a-filter-to-a-background-image/  */
+  
+}
+html:before {
+  position: absolute;
+  content: "";
+  top: 0; left: 0;
+  width: 100%; height: 100%;
 
+  background-color: #BAD9B5;
   background-image: url("back.webp");
   /* The image used */
   background-size: cover;
   background-attachment: fixed;
   background-blend-mode: overlay;
+  filter: blur(5px);  
+  -webkit-filter: blur(5px);
 
 }
 
+
 body {
+  position: relative;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -139,11 +152,13 @@ ruby {
 }
 
 rb {
-  font-size: 1rem;
 }
 
 rt {
-  font-size: .9rem;
+  font-size: .75rem;
+}
+dt  {
+  font-size:1em;
 }
 
 /*
@@ -157,6 +172,7 @@ dl {
   padding: .2em;
   border-radius: 0.8rem;
 }
+
 
 .adj {
   background-color: #4CAF50
