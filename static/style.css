@@ -34,8 +34,12 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover, li.active a{
   color: #ABA361;
+}
+
+li.active a:hover{
+  background-color: #732C2C;
 }
 
 label {
