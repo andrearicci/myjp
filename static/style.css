@@ -5,6 +5,7 @@ html {
   /* https://css-tricks.com/apply-a-filter-to-a-background-image/  */
   
 }
+  /* trick for a background image
 html:before {
   position: absolute;
   content: "";
@@ -13,7 +14,6 @@ html:before {
 
   background-color: #BAD9B5;
   background-image: url("back.webp");
-  /* The image used */
   background-size: cover;
   background-attachment: fixed;
   background-blend-mode: overlay;
@@ -21,7 +21,7 @@ html:before {
   -webkit-filter: blur(5px);
 
 }
-
+ */
 
 body {
   position: relative;
